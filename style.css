@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-text: 'DM Sans', sans-serif;
+    --font-logo: 'Pathway Gothic One', sans-serif;
+    --red: #BF0606;
+    --yellow: #FFCF00;
+    --orange: #FF6100;
+    --white: #FFFFFF;
+    --light-gray: #DEE1DF;
+    --gray: #C1B9B9;
+    --dark-gray: #1f2622;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: var(--font-text);
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+}
+
+header{
+    height: 105px;
+    border-bottom: 0.1px solid var(--gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-transform: uppercase;
+    color: var(--dark-gray);
+    position: sticky;
+    top: 0%;
+    background-color: var(--white);
+}
+
+.logo-icon{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: center;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.logo h2{
+    font-family: var(--font-logo);
+    font-size: 3rem;
+    letter-spacing: 0.24rem;
+}
+
+.icon{
+    display: flex;
+    gap: 15px;
+    place-self: right;
+    width: 100px;
+}
+
+.empty{
+    width: 100px;
+}
+
+.icon img{
+    width: 25px;
+}
+
+.icon img:last-child{
+    width: 20px;
+}
+
+nav{
+    display: flex;
+    gap: 24px;
+}
+
+nav p{
+    font-size: 0.75rem;
+    letter-spacing: 0.32rem;
+    font-weight: 400;
+}
+
+nav p:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--dark-gray);
+    transform: translateY(10.3px);
+    opacity: 0;
+}
+
+#vermelho{
+    color: var(--red);
+}
+
+header p:hover, img:hover{
+    cursor: pointer;
+} 
+
+header p:hover:after{
+    opacity: 1;
+}
+
+main{
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product{
+    display: grid;
+    align-items: start;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+}
+
+.product img{
+    width: 500px;
+    place-self: start end;
+}
+
+.info-product{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 60%;
+}
+
+.name-star{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.name-star h2{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+}
+
+.stars{
+    display: flex;
+    gap: 12px;
+}
+
+.stars img{
+    width: 25px;
+}
+
+.add{
+    display: flex;
+    justify-content: space-evenly;
+    width: 142px;
+    height: 44px;
+    border: 1px solid var(--light-gray);
+    align-items: center;
+}
+
+.add span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.add span:first-child:hover, span:last-child:hover{
+    cursor: pointer;
+}
+
+.car{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.32em;
+    border: none;
+}
+
+.car:hover{
+    cursor: pointer;
+}
+
+.product-description{
+    font-size: 16px;
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
