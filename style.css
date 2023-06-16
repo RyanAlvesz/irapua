@@ -10,7 +10,7 @@
     --red: #BF0606;
     --yellow: #FFCF00;
     --orange: #FF6100;
-    --light-orange: #FFF8F4;
+    --light-orange: #ffe8db;
     --white: #FFFFFF;
     --light-gray: #DEE1DF;
     --gray: #C1B9B9;
@@ -266,7 +266,7 @@ main{
 }
 
 .products{
-    height: 100vh;
+    padding: 64px 0px;
     background-color: var(--light-orange);
     width: 100%;
     display: flex;
@@ -318,13 +318,7 @@ main{
 
 footer{
     display: grid;
-    grid-template-rows: 20vh 40vh 5vh; 
-}
-
-.info p:hover{
-    text-decoration: underline;
-    cursor: pointer;
-    font-weight: 600;
+    grid-template-rows: 20vh 1fr 2vh; 
 }
 
 .faixa{
@@ -351,6 +345,12 @@ img[alt~=branco]{
     justify-content: space-between;
     gap: 40px;
     margin: 44px 44px 24px 44px;
+    width: auto;
+}
+
+.info p:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .container__principal{
@@ -397,8 +397,12 @@ form button{
     font-size: 16px;
 }
 
-.social img{
+.social a{
     width: 20px;
+}
+
+img[alt~=Instagram]{
+    width: 100%;
 }
 
 .options{
@@ -425,6 +429,10 @@ form button{
     letter-spacing: 0.32em;
 }
 
+.options__info p{
+    width: max-content;
+}
+
 .container__secundario{
     display: flex;
     justify-content: space-between;
@@ -448,7 +456,9 @@ form button{
 .termos{
     display: flex;
     gap: 24px;
+    width: auto;
 }
+
 /* .product-img-slides.image img{
     position: absolute;
     width: 400px;
