@@ -439,6 +439,12 @@ form button{
     font-size: 24px;
 }
 
+.container__secundario > p:hover{
+    font-weight: 400;
+    text-decoration: none;
+    cursor: default;
+}
+
 .termos{
     display: flex;
     gap: 24px;
