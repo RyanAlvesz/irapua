@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/favicon.png">
     <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
     <title>Irapuã - Protetor Solar</title>
 </head>
 
@@ -38,27 +39,43 @@
 
     <main>
         <section class="product">
-            <img src="./img/protetor-solar.jpeg" alt="Modelo segurando o Protetor Solar Irapuã">
-            <div class="info-product">
 
-                <div class="name-star">
-                    <h2>Protetor Solar Irapuã Proteção Diária - FPS 55</h2>
-                    <div class="stars">
-                        <img src="./img/yellow-star.svg" alt="Estrela Amarela">
-                        <img src="./img/yellow-star.svg" alt="Estrela Amarela">
-                        <img src="./img/yellow-star.svg" alt="Estrela Amarela">
-                        <img src="./img/yellow-star.svg" alt="Estrela Amarela">
-                        <img src="./img/yellow-star.svg" alt="Estrela Amarela">
-                    </div>
+            <div class="product-img">
+                <div class="product-img-slides image">
+                    <img id="img1" src="./img/protetor-solar.jpeg" alt="Modelo segurando o Protetor Solar Irapuã">
+                    <img id="img2" src="./img/protetor-solar-2.jpg" alt="Protetor Solar Irapuã em pé">
+                    <img src="/img/protetor-solar-1.png" alt="Pessoa segurando o Protetor Solar Irapuã">
+                    <img src="./img/Flor.png" alt="Flor">
                 </div>
+                <div class="product-img-slides preview">
+                    <img id="teste1" src="./img/protetor-solar.jpeg" alt="Modelo segurando o Protetor Solar Irapuã">
+                    <img id="teste2" src="./img/protetor-solar-2.jpg" alt="Protetor Solar Irapuã em pé">
+                    <img src="/img/protetor-solar-1.png" alt="Pessoa segurando o Protetor Solar Irapuã">
+                    <img src="./img/Flor.png" alt="Flor">
+                </div>
+            </div>
 
-                <p class="price">
-                    R$ 49,90
-                </p>
+                <div class="info-product">
+    
+                    <div class="name-star">
+                        <h2>Protetor Solar Irapuã Proteção Diária - FPS 55</h2>
+                        <div class="stars">
+                            <img src="./img/yellow-star.svg" alt="Estrela Amarela">
+                            <img src="./img/yellow-star.svg" alt="Estrela Amarela">
+                            <img src="./img/yellow-star.svg" alt="Estrela Amarela">
+                            <img src="./img/yellow-star.svg" alt="Estrela Amarela">
+                            <img src="./img/yellow-star.svg" alt="Estrela Amarela">
+                        </div>
+                    </div>
+
+                <div class="price">
+                    <p id="depois"> R$ 49,90 </p>
+                    <p id="antes"> R$ 79,90</p>
+                </div>
 
                 <div class="add">
                     <span>-</span>
-                    <span>0</span>
+                    <span id="number">0</span>
                     <span>+</span>
                 </div>
 
@@ -67,11 +84,13 @@
                 </button>
 
                 <p class="product-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis nibh vitae sollicitudin ullamcorper. Nam justo enim, iaculis sit amet felis a, aliquet bibendum dolor. Phasellus finibus pellentesque sem, sit amet suscipit nunc porttitor eget.
+                    Com o protetor solar Irapuã sua pele irá refletir contra os raios ultravioletas que agridem sua pele. Um Protetor solar para peles acneicas e oleosas, contando com alta proteção solar e textura oil-free. Nós produzimos um protetor solar que garante rápida absorção, onde sua fórmula absorverá a oleosidade excessiva e manterá sua pele sem brilho por até 10 horas.
                 </p>
-
+                <p class="product-description">
+                    Com foco na sustentabilidade, essa embalagem de 200ml é 100% feita de plástico reciclado Pós-Consumo (PCR) e tem um design funcional especificamente para evitar derramamentos.
+                </p>
                 <div class="product-details">
-                    <p>120g</p>
+                    <p>120gm | 8.45 fl. oz</p>
                     <p>Feito no Brasil</p>
                     <p>Sem crueldade animal</p>
                 </div>
@@ -80,8 +99,106 @@
 
         </section>
 
+        <section class="products">
+            <h2>VOCÊ TAMBÉM PODE GOSTAR</h2>
+            <div class="products__items">
+                <div class="products__product">
+                    <img src="./img/irapua.png" alt="Perfume Saçuena">
+                    <div class="item">
+                        <p>Perfume Saçuena</p>
+                        <p>R$ 140,00</p>
+                    </div>
+                    <button class="car car__item">
+                        <a href="#">Adicione no carrinho</a>
+                    </button>
+                </div>
+                <div class="products__product">
+                    <img src="./img/gloss.png" alt="Gloss HoneyLips">
+                    <div class="item">
+                        <p>Honey lips - Gloss</p>
+                        <p>R$ 40,00</p>
+                    </div>
+                    <button class="car car__item">
+                        <a href="#">Adicione no carrinho</a>
+                    </button>
+                </div>
+                <div class="products__product">
+                    <img src="./img/batom.png" alt="Batom HoneyLips">
+                    <div class="item">
+                        <p>Honey lips - Batom</p>
+                        <p>R$ 58,50</p>
+                    </div>
+                    <button class="car car__item">
+                        <a href="#">Adicione no carrinho</a>
+                    </button>
+                </div>
+            </div>
+        </section>
 
     </main>
+
+    <footer>
+        <div class="faixa">
+            <img src="./img/colmeia.svg" alt="Colmeia">
+            <img src="./img/logo-white.png" alt="Logo Irapuã branco">
+        </div>
+
+        <div class="info">
+            <div class="container__principal">
+                <div class="social">
+
+                    <h3>Mantenha Contato</h3>
+
+                    <form action="#" method="post">
+                        <input type="email" placeholder="Adicione o seu email">
+                        <button type="submit"> Enviar </button>
+                    </form>
+                    
+                    <img src="./img/instagram.svg" alt="Ícone do Instagram">
+                </div>
+                <div class="options">
+                    <h3>Atendimento ao Cliente</h3>
+                    <div class="options__info">
+                        <p>Conta</p>
+                        <p>Entre em Contato</p>
+                        <p>FAQ'S</p>
+                        <p>Política de Compra</p>
+                        <p>Política de Extorno</p>
+                        <p>Termos de Serviço</p>
+                        <p>Política de reembolso</p>
+                    </div>
+                </div>
+                <div class="options">
+                    <h3>Loja</h3>
+                    <div class="options__info">
+                        <p>Compre Aqui</p>
+                        <p>Mais Vendidos</p>
+                        <p>Fragrâncias</p>
+                        <p>Cuidados com o corpo</p>
+                        <p>Cuidados com o cabelo</p>
+                    </div>
+                </div>
+                <div class="options">
+                    <h3>Sobre Nós</h3>
+                    <div class="options__info">
+                        <p>Nossa História</p>
+                        <p>sustentabilidade</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container__secundario">
+                <p>Copyright 2023 | IRAPUÃ</p>
+                <div class="termos">
+                    <p>Política de Privacidade</p>
+                    <p>Termos e Condições</p>
+                    <p>Acessibilidade</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faixa"></div>
+
+    </footer>
 
 </body>
 
