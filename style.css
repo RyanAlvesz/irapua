@@ -36,12 +36,40 @@ button{
     border: none;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 body{
     font-family: var(--font-text);
     background-color: var(--white);
     display: flex;
     flex-direction: column;
     background-color: var(--white);
+}
+
+.aviso{
+    display: none;
+    opacity: 0;
+}
+
+.active{
+    display: flex;
+    opacity: 1;
+    width: 400px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-orange);
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border-radius: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: solid 1px var(--orange);
 }
 
 header{
@@ -151,7 +179,6 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    width: fit-content;
     place-self: start end;
 }
 
@@ -160,17 +187,17 @@ main{
 }
 
 .product-img-slides{
-    display: flex;
     height: 500px;
     width: 500px;
-    overflow: hidden;
+}
+
+.product-img-slides img{
+    width: 100%;
 }
 
 .preview{
-    overflow: visible;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
     height: auto;
     width: auto;
     gap: 12px;
@@ -184,7 +211,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 60%;
+    width: 75%;
 }
 
 .name-star{
@@ -224,32 +251,30 @@ main{
 }
 
 .add{
-    display: flex;
-    justify-content: space-evenly;
-    width: 142px;
-    height: 44px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     border: 1px solid var(--light-gray);
-    align-items: center;
+    width: 150px;
+    height: 44px;
 }
 
-.add span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.add input{
+    width: 50px;
+    text-align: center;
+    border: none;
+}
+
+.add button{
     height: 100%;
-}
-
-.add span:first-child:hover, span:last-child:hover{
-    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .car{
     width: 100%;
-}
-
-.car:hover{
-    cursor: pointer;
 }
 
 .product-description{
@@ -297,8 +322,8 @@ main{
 }
 
 .products__product img{
-    height: 34.375rem;
-    width: 24.0625rem;
+    height: 28rem;
+    width: 20rem;
 }
 
 .item{
@@ -313,7 +338,7 @@ main{
 }
 
 .car__item{
-    width: 70%;
+    width: 80%;
 }
 
 footer{
@@ -323,20 +348,22 @@ footer{
 
 .faixa{
     background-color: var(--orange);
+    background-image: url(./img/colmeia.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
-.faixa img{
-    width: 200%;
+.no_bg{
+    background-image: none;
 }
 
 img[alt~=branco]{
     position: absolute;
     z-index: 1;
-    width: 10.12rem;
+    width: 8rem;
 }
 
 .info{
@@ -459,11 +486,3 @@ img[alt~=Instagram]{
     width: auto;
 }
 
-/* .product-img-slides.image img{
-    position: absolute;
-    width: 400px;
-}
-
-.product-img-slides.image img.show{
-    z-index: 1000;
-} */

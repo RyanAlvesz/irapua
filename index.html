@@ -10,11 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/favicon.png">
     <link rel="stylesheet" href="./style.css">
-    <script src="./app.js" defer></script>
+    <script src="./img-slides.js" defer></script>
+    <script src="./add-product.js" defer></script>
     <title>Irapuã - Protetor Solar</title>
 </head>
 
 <body>
+
+    <div id="aviso" class="aviso">
+        <p>O produto está esgotado</p>
+    </div>
+    
     <header>
         <div class="logo-icon">
             <div class="empty"></div>
@@ -41,17 +47,13 @@
         <section class="product">
 
             <div class="product-img">
-                <div class="product-img-slides image">
-                    <img id="img1" src="./img/protetor-solar.jpeg" alt="Modelo segurando o Protetor Solar Irapuã">
-                    <img id="img2" src="./img/protetor-solar-2.jpg" alt="Protetor Solar Irapuã em pé">
-                    <img src="/img/protetor-solar-1.png" alt="Pessoa segurando o Protetor Solar Irapuã">
-                    <img src="./img/Flor.png" alt="Flor">
+                <div class="product-img-slides">
+                    <img src="./img/protetor-solar.jpeg" alt="Modelo segurando o Protetor Solar Irapuã" id="img">
                 </div>
-                <div class="product-img-slides preview">
-                    <img id="teste1" src="./img/protetor-solar.jpeg" alt="Modelo segurando o Protetor Solar Irapuã">
-                    <img id="teste2" src="./img/protetor-solar-2.jpg" alt="Protetor Solar Irapuã em pé">
-                    <img src="/img/protetor-solar-1.png" alt="Pessoa segurando o Protetor Solar Irapuã">
-                    <img src="./img/Flor.png" alt="Flor">
+                <div class="product-img-slides preview" id="buttons">
+                    <img id="img1" src="./img/protetor-solar.jpeg" alt="Modelo segurando o Protetor Solar Irapuã">
+                    <img id="img2" src="./img/protetor-solar-1.png" alt="Protetor solar Irapuã">
+                    <img id="img3" src="./img/flor.png" alt="Flor Ylang Ylang">
                 </div>
             </div>
 
@@ -73,13 +75,13 @@
                     <p id="antes"> R$ 79,90</p>
                 </div>
 
-                <div class="add">
-                    <span>-</span>
-                    <span id="number">0</span>
-                    <span>+</span>
+                <div class="add" id="change">
+                    <button id="less">-</button>
+                    <input type="text" id="number" value="1">
+                    <button id="more" type="button">+</button>
                 </div>
 
-                <button class="car">
+                <button id="acabou" class="car">
                     <a href="#">Adicione no carrinho</a>
                 </button>
 
@@ -139,7 +141,6 @@
 
     <footer>
         <div class="faixa">
-            <img src="./img/colmeia.svg" alt="Colmeia">
             <img src="./img/logo-white.png" alt="Logo Irapuã branco">
         </div>
 
@@ -199,7 +200,7 @@
             </div>
         </div>
 
-        <div class="faixa"></div>
+        <div class="faixa no_bg"></div>
 
     </footer>
 
