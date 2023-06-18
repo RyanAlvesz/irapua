@@ -10,16 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/favicon.png">
     <link rel="stylesheet" href="./style.css">
-    <script src="./img-slides.js" defer></script>
-    <script src="./add-product.js" defer></script>
+    <script src="./js/img-slides.js" defer></script>
+    <script src="./js/add-product.js" defer></script>
+    <script src="./js/over.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Irapuã - Protetor Solar</title>
 </head>
 
 <body>
-
-    <div id="aviso" class="aviso">
-        <p>O produto está esgotado</p>
-    </div>
     
     <header>
         <div class="logo-icon">
@@ -81,7 +79,7 @@
                     <button id="more" type="button">+</button>
                 </div>
 
-                <button id="acabou" class="car">
+                <button id="acabou" onclick="mensagem()" class="car">
                     <a href="#">Adicione no carrinho</a>
                 </button>
 

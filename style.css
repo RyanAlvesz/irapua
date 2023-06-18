@@ -30,7 +30,7 @@ button{
     background-color: var(--orange);
     color: var(--white);
     font-weight: 700;
-    font-size: 12px;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.32em;
     border: none;
@@ -48,32 +48,8 @@ body{
     background-color: var(--white);
 }
 
-.aviso{
-    display: none;
-    opacity: 0;
-}
-
-.active{
-    display: flex;
-    opacity: 1;
-    width: 400px;
-    height: 70px;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--light-orange);
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    border-radius: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: solid 1px var(--orange);
-}
-
 header{
-    height: 105px;
+    height: 6.5625rem;
     border-bottom: 0.1px solid var(--gray);
     display: flex;
     flex-direction: column;
@@ -90,7 +66,7 @@ header{
 .logo-icon{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 90vw;
 }
 
 .logo{
@@ -101,7 +77,7 @@ header{
 }
 
 .logo img{
-    width: 50px;
+    width: 3.725rem;
 }
 
 .logo h2{
@@ -112,17 +88,17 @@ header{
 
 .icon{
     display: flex;
-    gap: 15px;
+    gap: 1rem;
     place-self: right;
-    width: 100px;
+    width: 6.25rem;
 }
 
 .empty{
-    width: 100px;
+    width: 6.25rem;
 }
 
 .icon img{
-    width: 25px;
+    width: 1.6em;
 }
 
 nav{
@@ -142,8 +118,9 @@ nav p:after{
     width: 100%;
     height: 1px;
     background-color: var(--dark-gray);
-    transform: translateY(10.3px);
+    transform: translateY(9.6px);
     opacity: 0;
+    z-index: 1;
 }
 
 #vermelho{
