@@ -48,6 +48,10 @@ body{
     background-color: var(--white);
 }
 
+
+/* HEADER */
+
+
 header{
     height: 6.5625rem;
     border-bottom: 0.1px solid var(--gray);
@@ -61,6 +65,7 @@ header{
     position: sticky;
     top: 0%;
     background-color: var(--white);
+    z-index: 1;
 }
 
 .logo-icon{
@@ -135,6 +140,10 @@ header p:hover:after{
     opacity: 1;
 }
 
+
+/* MAIN */
+
+
 main{
     margin-top: 36px;
     display: flex;
@@ -142,6 +151,10 @@ main{
     align-items: center;
     gap: 64px;
 }
+
+
+/* PRODUCT AREA */
+
 
 .product{
     display: grid;
@@ -267,6 +280,10 @@ main{
     text-decoration: underline;
 }
 
+
+/* YOU MAY ALSO LIKE AREA */
+
+
 .products{
     padding: 64px 0px;
     background-color: var(--light-orange);
@@ -278,12 +295,13 @@ main{
     justify-content: center;
 }
 
-.products h2{
+.products h2, .faq h2{
     font-size: 24px;
     line-height: 32px;
     text-align: center;
     letter-spacing: 0.32em;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .products__items{
@@ -317,6 +335,92 @@ main{
 .car__item{
     width: 80%;
 }
+
+
+/* FAQ AREA */
+
+
+.faq{
+    display: grid;
+    grid-template-rows: 10vh 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 0 64px 0;
+}
+
+.faq__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.card{
+    max-width: 700px;
+    border: 1px solid var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.card-header a {
+    padding: 15px 20px;
+    display: block;
+    font-weight: 600;
+    color: #000;
+    position: relative
+}
+
+.card-header a:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 2px;
+    transition-duration: 0.2s;
+}
+
+.card-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+
+.card-body p, .card-body ol{
+    color: var(--gray);
+    line-height: 26px;
+    padding: 0px 20px 15px 20px;
+}
+
+.card-header a:after {
+    content: '+';
+    font-size: 25px;
+    font-weight: 400;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    color: var(--orange)
+}
+
+.card.active a:after {
+    content: '-';
+    color: #ff4d1c;
+}
+
+.card-header.active a:hover:after,
+.card-header a:hover:after {
+    color: var(--white)
+} 
+
+.card-body ol{
+    padding-left: 32px;
+}
+
+.card.active .card-body{
+    max-height: 300px;
+} 
+
+/* FOOTER AREA */
+
 
 footer{
     display: grid;
