@@ -1,3 +1,5 @@
+'use strict'
+
 const less = document.getElementById('less');
 const more = document.getElementById('more');
 

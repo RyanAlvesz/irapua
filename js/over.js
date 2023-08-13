@@ -1,3 +1,5 @@
+'use strict'
+
 const acabou = document.getElementById('acabou');
 
 function mensagem () {
