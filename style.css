@@ -587,6 +587,10 @@ img[alt~=Instagram]{
         display: none;
     }
 
+    .main{
+        gap: 24px;
+    }
+
     .product{
         display: flex;
         align-items: center;
