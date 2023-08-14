@@ -587,7 +587,7 @@ img[alt~=Instagram]{
         display: none;
     }
 
-    .main{
+    main{
         gap: 24px;
     }
 
