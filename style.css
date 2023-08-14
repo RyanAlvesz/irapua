@@ -317,8 +317,8 @@ main{
 }
 
 .products__product img{
-    height: 28rem;
-    width: 20rem;
+    height: 25rem;
+    width: 17rem;
 }
 
 .item{
@@ -413,6 +413,7 @@ main{
 
 .card-body ol{
     padding-left: 32px;
+    padding-top: 16px;
 }
 
 .card.active .card-body{
@@ -425,6 +426,7 @@ main{
 footer{
     display: grid;
     grid-template-rows: 20vh 1fr 2vh; 
+    width: 100%;
 }
 
 .faixa{
@@ -435,6 +437,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .no_bg{
@@ -453,7 +456,6 @@ img[alt~=branco]{
     justify-content: space-between;
     gap: 40px;
     margin: 44px 44px 24px 44px;
-    width: auto;
 }
 
 .info p:hover{
@@ -464,7 +466,7 @@ img[alt~=branco]{
 .container__principal{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 36px;
+    gap: 2.25rem;
 }
 
 .social{
@@ -488,7 +490,7 @@ img[alt~=branco]{
 }
 
 form input{
-    width: 350px;
+    width: 300px;
     height: 44px;
     font-family: var(--font-text);
     font-weight: 400;
@@ -539,7 +541,7 @@ img[alt~=Instagram]{
 }
 
 .options__info p{
-    width: max-content;
+    width: fit-content;
 }
 
 .container__secundario{
@@ -568,3 +570,205 @@ img[alt~=Instagram]{
     width: auto;
 }
 
+/* Responsividade */
+
+@media (max-width: 992px) {
+
+    header{
+        height: 12vh;
+        z-index: 2;
+    }
+
+    .logo-icon{
+        justify-content: center;
+    }
+
+    nav,.icon, .empty{
+        display: none;
+    }
+
+    .product{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 32px;
+    }
+    
+    .product-img{
+        gap: 12px;
+        place-self: center;
+    }
+        
+    .product-img-slides{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .preview{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: auto;
+    }
+    
+    .preview img{
+        width: 64px;
+    }
+    
+    .info-product{
+        align-items: center;
+        gap: 28px;
+        width: 100%;
+    }
+    
+    .name-star{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    
+    .name-star h2{
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .car{
+        width: 100%;
+    }
+    
+    .product-details{
+        place-self: start;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+    .faq{
+        gap: 1rem;
+        margin: 0px;
+        padding-bottom: 24px;
+        justify-items: center;
+    }
+    
+    .faq__container{
+        margin-bottom: 4rem;
+    }
+    
+    .faq h2{
+        font-size: 15px;
+    }
+
+    .card{
+        width: 90%;
+    }
+    
+    .card-header a {
+        font-size: 0.9rem;
+    }
+
+    footer{
+        overflow: hidden;
+        grid-template-rows: 30vh 1fr 2vh; 
+    }
+
+    .info{
+        margin: 32px;
+        gap: 64px;
+    }
+
+    .container__principal{
+        display: flex;
+        flex-direction: column;
+        gap: 2.25rem;
+    }
+    
+    .social{
+        align-items: center;
+    }
+    
+    form button{
+        width: 100%;
+    }
+    
+    .options{
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .options h3{
+        font-size: 12px;
+    }
+    
+    .options__info{
+        align-items: center;
+    }
+    
+    .container__secundario{
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .container__secundario > p{
+        font-size: 13px;
+        font-family: var(--font-text);
+    }
+    
+    .termos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: auto;
+        font-size: 13px;
+        font-family: var(--font-text);
+    }
+
+
+    /* .products{
+        gap: 12px;
+        padding-inline-start: 12px;
+        height: 88vh;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    
+    .products h2, .faq h2{
+        font-size: 15px;
+    }
+    
+    .products__items{
+        gap: 24px;
+        place-self: start;
+        margin-left: 7%;
+    }
+    
+    .products__product{
+        gap: 16px;
+    }
+
+    .products__product img{
+        height: 16rem;
+        width: 12rem;
+    }
+    
+    .item{
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.32em;
+        gap: 8px;
+    }
+    
+    .car__item{
+        width: 80%;
+    } */
+
+    
+    .products{
+        display: none;
+    }
+
+}
