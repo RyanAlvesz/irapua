@@ -1,23 +1,27 @@
 'use strict'
 
-const less = document.getElementById('less');
-const more = document.getElementById('more');
+const less = document.getElementById('less')
+const more = document.getElementById('more')
+var after = document.getElementById('after')
 
 function add(){
-    var number = document.getElementById("number").value;
+    const number = document.getElementById('number').value
+
     if (number < 13){
-        var novo = number - (-1);
-        document.getElementById("number").value = novo;
+        const newNumber = number - (-1)
+        const newValue = Number(after) + 49.90
+        document.getElementById('number').value = newNumber
+        document.getElementById('after').textContent = String(newValue)
     }
 }
 
 function remove(){
-    var number = document.getElementById("number").value;
+    const number = document.getElementById('number').value
     if(number > 0){
-        var novo = number - 1;
-        document.getElementById("number").value = novo;
+        const novo = number - 1
+        document.getElementById('number').value = novo
     }
 }
 
-more.addEventListener('click', add);
-less.addEventListener('click', remove);
+more.addEventListener('click', add)
+less.addEventListener('click', remove)

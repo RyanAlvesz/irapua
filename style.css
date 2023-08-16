@@ -65,7 +65,7 @@ header{
     position: sticky;
     top: 0%;
     background-color: var(--white);
-    z-index: 1;
+    z-index: 2;
 }
 
 .logo-icon{
@@ -388,7 +388,7 @@ main{
 .card-body p, .card-body ol{
     color: var(--gray);
     line-height: 26px;
-    padding: 0px 20px 15px 20px;
+    padding: 8px 32px 16px 24px;
 }
 
 .card-header a:after {
@@ -413,7 +413,6 @@ main{
 
 .card-body ol{
     padding-left: 32px;
-    padding-top: 16px;
 }
 
 .card.active .card-body{
@@ -438,6 +437,8 @@ footer{
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .no_bg{
@@ -576,7 +577,6 @@ img[alt~=Instagram]{
 
     header{
         height: 12vh;
-        z-index: 2;
     }
 
     .logo-icon{
